@@ -1,0 +1,345 @@
+/* 
+Developer: Sarang Dev Saha
+Theme: Food order website for Resturant
+Version: 1.0 
+*/
+
+/* common css for all */
+.container{
+    width: 80%;
+    margin: 0% auto;
+    padding: 1%;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color: #f39c12;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover{
+    color: #e74c3c;
+}
+
+h2{
+    color: #2c3e50;
+    font-size: 32px;
+    margin-bottom: 3%;
+}
+
+h3{
+    font-size: 25px;
+}
+
+.img-responsive{
+    width: 100%;
+}
+
+.img-curve{
+    border-radius: 20px;
+}
+.text-right{
+    text-align: right;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-white{
+    color: azure;
+}
+
+/* css for navigation bar */
+.logo{
+    width: 22%;
+    border: 2px solid black;
+    float: left;
+}
+
+.menu{
+    line-height: 65px;
+}
+
+.menu ul{
+    list-style-type: none;
+}
+
+.menu ul li{
+    display: inline;
+    padding: 1.5%;
+}
+
+.fix{
+    clear: both;
+    float: none;
+}
+
+/* css for food search section */
+.food-search{
+    background-image: url(../Images/banner.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    padding: 7%;
+}
+
+.food-search input[type="search"]{
+    width: 50%;
+    padding: 1%;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+}
+
+.btn{
+    padding: 11.6px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 7px;
+}
+
+.btn-primary{
+    background-color: #f39c12;
+    color:blanchedalmond;
+}
+
+.btn-primary:hover{
+    color:#e74c3c;
+    background-color: #e67e22;
+}
+
+/* css for category section */
+.categories{
+    padding: 4%;
+}
+
+.box{
+    width: 27%;
+    float: left;
+    margin: 3%;
+    border-radius: 20px;
+}
+
+.float-container{
+    position: relative;
+}
+
+.float-text{
+    position: absolute;
+    bottom: 70px;
+    left: 100px;
+}
+
+.category-btn{
+    background-color: white;
+    border-radius: 30px;
+    padding: 5%;
+}
+
+.category-btn:hover{
+    background-color: #bdc3c7;
+    border-radius: 30px;
+    padding: 5%;
+}
+
+/* css for food menu */
+.food-menu{
+    background-color: #ecf0f1;
+    padding: 4% 0;
+}
+
+.menu-box{
+    width: 43.5%;
+    margin: 1%;
+    float: left;
+    padding: 2%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.menu-img{
+    width: 25%;
+    float: left;
+    padding-top: 5%;
+}
+
+.menu-desc{
+    width: 65%;
+    float: left;
+    margin: 3%;
+}
+
+.food-price{
+    font-size: 14.4px;
+    font-style: italic;
+    padding: 3%;
+}
+
+.food-desc{
+    font-size: 14px;
+    font-style: italic;
+    color: #34495e;
+    padding: 6%;
+    margin-left: -3%;
+}
+
+.down-btn{
+    color: #f39c12;
+}
+
+.down-btn:hover{
+    color: #e74c3c;
+    background-color: #e74c3c;
+    border-radius: 200px;
+}
+
+/* css for Social Media */
+
+.social ul{
+    list-style-type: none;
+}
+
+.social ul li{
+    display: inline;
+    padding: 1.5%;
+}
+
+.social-btn{
+    background-color: white;
+}
+
+.social-btn:hover{
+    background-color: #bdc3c7;
+    border-radius: 10px;
+}
+
+/* css for order.html */
+
+.order-search{ 
+    background-image: url(../Images/background-order.jpg); 
+    opacity: 92%;
+    background-size: cover;              
+    background-repeat: no-repeat;
+    background-position: center ;
+    padding: 7%;
+}
+
+.order-search input[type="search"]{                      
+    width: 50%;
+    padding: 1%;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+}
+
+.item{
+    display: inline;
+    margin: auto;
+}
+
+.order-search ul{
+    list-style: none;
+    padding: 1.5%;
+}
+
+.order-search ul li{
+    padding: 3%;
+}
+
+.order-menu{
+    padding: 1%;
+}
+
+.input-responsive{
+    width: 30%;
+    padding: 1%;
+    margin-right: 4%;
+    margin-bottom: 3%;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.order-label{
+    margin-bottom: 2%; 
+    font-weight: bold;
+}
+
+.text-left{
+    text-align: left;
+    margin-left: 32%;
+}
+/* css for mobile devices/smaller screens (<=768px ie. screen size less than or equal to that of an iPad)*/
+
+@media only screen and (max-width:768px){
+    .logo{
+        width: 80%;
+        float: none;
+        margin: 2% auto;
+    }
+
+    .menu ul{
+        text-align: center;
+    }
+
+    .food-search input[type="Search"]{
+        width: 90%;
+        margin-bottom: 5%;
+        padding: 4%;
+        font-size: 15px;
+    }
+
+    .btn{
+        width: 40%;
+    }
+
+    .categories{
+        padding-top: 20%; 
+    }
+    h2{
+        margin-bottom: 5%;
+    }
+
+    .box{
+        width: 95%;
+        margin: 3% auto;
+    }
+
+    .food-menu{
+        padding: 20% 0;
+    }
+    
+    .menu-box{
+        width: 90%;
+        padding: 5%;
+        margin-bottom: 10%;
+    }
+
+    .footer{
+        font-size: 14.5px;
+    }
+    
+    .input-responsive{
+        width: 80%;
+        padding: 1%;
+        margin-right: 4%;
+        margin-bottom: 3%;
+        border: none;
+        border-radius: 10px;
+        font-size: 1rem;
+    }
+    
+    .order-label{
+        margin-bottom: 5%; 
+        font-weight: bold;
+    }
+    
+    .mobile{
+        margin-top: 15%;
+    }
+}
